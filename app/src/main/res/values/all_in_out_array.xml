@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="all_in_out_array">
+        <item>ทั้งหมด/เข้า/ออก</item>
+        <item>ทั้งหมด</item>
+        <item>เข้า</item>
+        <item>ออก</item>
+    </string-array>
+</resources>

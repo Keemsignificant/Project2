@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">My Security</string>
+    <string name="button1">ตรวจสอบข้อมูลการเข้า-ออก</string>
+    <string name="button2">ตรวจสอบข้อมูลประจำเดือน</string>
+    <string name="button3">สถิติการเข้า-ออก</string>
+    <string name="button_check">ตรวจสอบข้อมูล</string>
+    <string name="data">ข้อมูลบุคคล</string>
+    <string name="name">ชื่อ</string>
+    <string name="day">วัน</string>
+    <string name="time">เวลา</string>
+    <string name="date">วันที่</string>
+
+
+</resources>

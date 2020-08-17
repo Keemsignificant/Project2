@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity1"
+    android:orientation="vertical"
+    android:background="#00000000">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="398dp"
+        android:layout_height="51dp"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:queryHint="ค้นหาที่นี่" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:id="@+id/txt_data"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:text="โปรดเลือกตัวเลือกในการตรวจสอบข้อมูล"
+        />
+
+
+    <LinearLayout
+        android:layout_width="401dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/radio_gr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <RadioButton
+                android:id="@+id/radio_all"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:checked="true"
+                android:onClick="checkButton"
+                android:padding="2dp"
+                android:text="ทั้งหมด"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/radio_in"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="checkButton"
+                android:padding="2dp"
+                android:text="บุคลากร"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/radio_out"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="checkButton"
+                android:padding="2dp"
+                android:text="บุคคลภายนอก"
+                android:textSize="18sp" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+    <Spinner
+        android:id="@+id/spinner_in_out"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:spinnerMode="dropdown" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:id="@+id/txt_count"
+        android:textSize="16sp"
+        android:textAlignment="textEnd"
+        android:text="จำนวนรายการทั้งหมด "/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/myRecycler1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="blocksDescendants"
+        android:layout_margin="5dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:background="#8BC34A"
+        android:padding="4dp"
+        android:scrollbars="vertical"
+        />
+
+</LinearLayout>
